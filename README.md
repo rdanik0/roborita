@@ -1,4 +1,5 @@
 ### How to commit
+
 1. Clone the repository:\
 `git clone https://github.com/rdanik0/roborita.git`
 
@@ -16,11 +17,12 @@
 `git push origin feature/my-new-feature`
 
 > [!IMPORTANT]
-> Only if the code is not a experimental feature which shouldn't be added to our main code
-6. Create a **PR-Request** to the `dev branch` on GitHub
+> Next steps only if the code is not a experimental feature which shouldn't be added to our main code.
 
-7. Re-check it, and **wait** the others
+6. Make a **PR-Request** to the `dev branch` on GitHub.
+
+7. Re-check it, and **wait** the others.
 
 > [!WARNING]
-> DO NOT MERGE THE DEV BRANCH TO THE MAIN ONE IF THE CODE IS NOT 100% STABLE AND WORKING**  
+> Do not merge the dev branch and the main branch until the code is 100% stable and working. 
 
