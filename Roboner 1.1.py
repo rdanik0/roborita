@@ -44,8 +44,11 @@ def room_counter():
 
 
 def get_start_pos():
+    global StartingPoint,DogFound,DogPos
+    
     # Если стена справа значит находимся на А
     if isWall(us_right):
+       StartingPoint=1
         # Если к тому же слева препятствие то нашли собаку 
         if isWall(us_left):
             DogFound = True
@@ -53,6 +56,7 @@ def get_start_pos():
     
     # Если стены справа нет значит развернемся
     elif not isWall(us_right):
+        StartingPoint=2
         # Если к тому же перед роботом препятствие то смотрим на собаку
         if isWall(us_front):
             DogFound = True
@@ -61,6 +65,7 @@ def get_start_pos():
         gyro.reset_angle(0)
 
     Main()
+
 
 def Main():
     TURN_ANGLE = 45
@@ -87,6 +92,7 @@ def Main():
         else:
             stabilization()
 
+
 def stabilization():
     ANGLE = 5
 
@@ -104,3 +110,6 @@ def ReturnToStartingPoint():
     pass
 
 get_start_pos()
+
+
+
