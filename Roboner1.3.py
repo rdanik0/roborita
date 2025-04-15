@@ -112,7 +112,7 @@ def Main():
             MovementAfter()
             ReturnToStartingPoint()
         elif(LocateRoomEntrance()):
-            room_encountered
+            room_encountered()
         else:
             MovementBefore()
             
